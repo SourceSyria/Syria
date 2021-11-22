@@ -5160,7 +5160,7 @@ end
 ----==========================================================================================================
 
 
-Namebot = (database:get(bot_id.."Syria:Name:Bot") or "ايكا")
+Namebot = (database:get(bot_id.."Syria:Name:Bot") or "سوريا")
 ArrayRdods = {
 "تراك ازعجتنا",
 "اسممممممممممييي "..Namebot,
@@ -6757,7 +6757,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n📂┇اهلا بك في متجر ملفات ايكا \n📮┇الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n📂┇اهلا بك في متجر ملفات سوريا \n📮┇الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n📌┇تدل علامة (✔) الملف مفعل\n".."📌┇تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -10731,7 +10731,7 @@ if msg.content_.ID == "MessageChatAddMembers" then
    ---==========================================
 if msg.content_.members_[0].id_ == tonumber(bot_id) then 
 print("it is Bot")
-Namebot = (database:get(bot_id.."Syria:Name:Bot") or "ايكا")
+Namebot = (database:get(bot_id.."Syria:Name:Bot") or "سوريا")
 local Texti = "↞ اهلين انا + "..Namebot.." 🐉\n\n↞ اختصاصي ادارة المجموعات من السبام والخ..\n↞ للتفعيل ارفعني مشرف وارسل تفعيل في المجموعه ."
 keyboard = {} 
 keyboard.inline_keyboard ={{{text = "اضفني", switch_inline_query="أنا بوت حمايه اضيفوني في مجموعتكم لزيادة الامان ."}}}
@@ -10804,7 +10804,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."Syria:Name:Bot") or "ايكا")
+local Name_Bot = (database:get(bot_id.."Syria:Name:Bot") or "سوريا")
 if not database:get(bot_id.."Syria:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
